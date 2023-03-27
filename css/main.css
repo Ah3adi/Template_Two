@@ -229,7 +229,7 @@ header .container nav .toggle-menu {
 /* Start Landing */
 .landing {
     background-color: #19c8fa;
-    background-image: url(/images/landing.jpg);
+    background-image: url(../images/landing.jpg);
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -410,7 +410,7 @@ header .container nav .toggle-menu {
 /* Start Designs Section */
 .design {
     height: 525px;
-    background-image: url(/images/design-features.jpg);
+    background-image: url(../images/design-features.jpg);
     background-size: cover;
     position: relative;
     overflow: hidden;
