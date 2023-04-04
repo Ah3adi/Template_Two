@@ -501,6 +501,13 @@ header .container nav .toggle-menu {
     -o-transition: 0.3s;
 }
 
+@media (max-width: 767px) {
+  .portfolio .container .shuffle li {         
+    padding: 10px 21px;
+    font-size: 12px;
+  }
+}
+
 .portfolio .container .shuffle li.active,
 .portfolio .container .shuffle li.tr:hover {
     background-color: var(--main-color);
@@ -662,7 +669,7 @@ header .container nav .toggle-menu {
 
     .video .text {
         height: 55%;
-        padding: 30px;
+        padding: 20px 30px;
     }
 
     .video .text h2 {
