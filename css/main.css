@@ -322,7 +322,7 @@ header .container nav .toggle-menu {
 .landing .bullets {
     display: flex;
     justify-content: space-between;
-    width: calc(90px - 10px);
+    width: 80px;
     position: absolute;
     left: 50%;
     bottom: 30px;
@@ -336,7 +336,6 @@ header .container nav .toggle-menu {
 .landing .bullets li {
     width: 20px;
     height: 20px;
-    /* margin-left: 10px; */
     border-radius: 50%;
     border: solid 1px white;
     -webkit-border-radius: 50%;
@@ -344,10 +343,6 @@ header .container nav .toggle-menu {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
-/* .landing .bullets li:first-of-type {
-    margin-left: 0;
-} */
 
 .landing .bullets li.active {
     background-color: var(--main-color);
@@ -709,3 +704,282 @@ header .container nav .toggle-menu {
     }
 }
 /* End About */
+
+/* Start Stats */
+.stats {
+    padding: var(--section-pad);
+    text-align: center;
+    position: relative;
+    background-image: url(../images/stats1.jpg);
+    background-size: cover;
+}
+
+.stats::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 60%);
+}
+
+.stats .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stats .container .box {
+    color: white;
+    padding: 50px;
+    background-color: var(--transp-color);
+}
+
+@media (max-width: 767px) {
+    .stats .container .box {
+        flex-basis: 100%;
+        position: relative;
+    }
+
+    .stats .container .box:first-of-type::after {
+        border: none;
+    }
+
+    .stats .container .box::after {
+        content: "";
+        border-bottom: solid var(--main-color) 1px;
+        position: absolute;
+        width: 300px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 767px) {
+    .stats .container .box {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .stats .container .box {
+        flex-basis: 25%;
+    }
+}
+
+.stats .container .box i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.stats .container .box .number {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.stats .container .box p {
+    font-weight: 300;
+}
+/* End Stats */
+
+/* Start Skills */
+.skills {
+    padding: var(--section-pad);
+}
+
+.skills .container {
+    display: grid;
+    column-gap: 100px;
+}
+
+@media (min-width: 992px) {
+    .skills .container {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+}
+
+.skills .container > div > h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.skills .container > div > p {
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--par-color);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.skills .testi .content {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+
+}
+
+.skills .testi .content img {
+    width: 100px;
+    margin-right: 60px;
+}
+
+@media (max-width: 767px) {
+    .skills .testi .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills .testi .content img {
+        margin: 0 auto 20px;
+    }
+}
+
+.skills .testi .content .text {
+    line-height: 2;
+    font-size: 15px;
+    font-weight: 300;
+    border-bottom: 1px solid #b1adaf;
+}
+
+.skills .testi .content .text p {
+    color: #a8a8a8;
+    text-align: end;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.skills .testi .bullets {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    margin: 0 auto 50px;
+}
+
+.skills .testi .bullets li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #a8a8a8;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.skills .testi .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* ---------------------------------------------------- */
+
+.skills .our-skills .holder {
+    margin-bottom: 30px;
+}
+
+.skills .our-skills .holder h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.skills .our-skills .holder .prog {
+    background-color: #dedadc;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.skills .our-skills .holder .prog span {
+    display: block;
+    height: 100%;
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.skills .our-skills .holder .prog span::before {
+    content: attr(data-progress);
+    background-color: #353235;
+    color: white;
+    position: absolute;
+    right: -18px;
+    top: -30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.skills .our-skills .holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: transparent;
+    border-top-color: #353235;
+    right: -5px;
+    top: -6px;
+}
+
+.skills .our-skills p {
+    margin-bottom: 60px !important;
+}
+/* End Skills */
+
+/* Start Quote */
+.quote {
+    background-image: url(../images/galaxy.jpg);
+    height: 350px;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 60%);
+}
+
+.quote .container {
+    position: relative;
+}
+
+.quote .container q {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.quote .container span {
+    font-size: 13px;
+    font-weight: 600;
+}
+/* End Quote */
