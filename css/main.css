@@ -990,3 +990,17 @@ header .container nav .toggle-menu {
     font-weight: 600;
 }
 /* End Quote */
+
+/*Start Pricing*/
+.pricing {
+  padding: var(--section-pad);
+}
+
+.pricing .container {
+  
+}
+
+.pricing .container .plans {
+  
+}
+/*End Pricing*/
