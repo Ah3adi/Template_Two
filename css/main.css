@@ -991,7 +991,7 @@ header .container nav .toggle-menu {
 }
 /* End Quote */
 
-/*Start Pricing*/
+/* Start Pricing */
 .pricing {
   padding: var(--section-pad);
 }
@@ -1007,11 +1007,29 @@ header .container nav .toggle-menu {
     margin-bottom: 70px;
 }
 
+@media (min-width: 768px) {
+    .pricing .container .plans {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .pricing .container .plans .plan {
+        flex-basis: 270px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pricing .container .plans .plan {
+        flex-basis: 350px;
+    }
+}
+
 .pricing .container .plans .head {
     padding: 40px 0;
     margin-bottom: 30px;
-    border-top: var(--main-color) solid 2px;
-    border-bottom: var(--main-color) solid 2px;
+    border-top: var(--main-color) solid 1px;
+    border-bottom: var(--main-color) solid 1px;
 }
 
 .pricing .container .plans .head h3 {
@@ -1047,12 +1065,12 @@ header .container nav .toggle-menu {
     position: relative;
 }
 
-.pricing .container .plans ul li::after {
+.pricing .container .plans ul li:not(:last-child):after {
     content: "";
     position: absolute;
     background-color: var(--main-color);
     width: 130px;
-    height: 2px;
+    height: 1px;
     left: 50%;
     bottom: -20px;
     transform: translateX(-50%);
@@ -1062,12 +1080,8 @@ header .container nav .toggle-menu {
     -o-transform: translateX(-50%);
 }
 
-.pricing .container .plans ul li:last-of-type::after {
-    width: 0;
-}
-
 .pricing .container .plans .foot {
-    border-top: var(--main-color) solid 2px;
+    border-top: var(--main-color) solid 1px;
     padding: 40px 0;
 }
 
@@ -1075,20 +1089,25 @@ header .container nav .toggle-menu {
     text-decoration: none;
     color: #1f2021;
     text-transform: capitalize;
-    border: var(--main-color) 2px solid;
+    border: var(--main-color) 1px solid;
     padding: 13px 35px;
 }
 
-@media (min-width: 768px) {
-  .pricing .container .plans {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .pricing .container .plans .plan {
-    flex-basis: 330px
-    
-  }
+.pricing .container .contact-p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #1f2021;
 }
-/*End Pricing*/
+
+.pricing .container .contact-l {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-transform: capitalize;
+    background-color: var(--main-color);
+    padding: 15px 35px;
+}
+/* End Pricing */
