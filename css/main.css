@@ -1078,4 +1078,17 @@ header .container nav .toggle-menu {
     border: var(--main-color) 2px solid;
     padding: 13px 35px;
 }
+
+@media (min-width: 768px) {
+  .pricing .container .plans {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .pricing .container .plans .plan {
+    flex-basis: 330px
+    
+  }
+}
 /*End Pricing*/
