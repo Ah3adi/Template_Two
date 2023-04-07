@@ -996,11 +996,86 @@ header .container nav .toggle-menu {
   padding: var(--section-pad);
 }
 
-.pricing .container {
-  
-}
 
 .pricing .container .plans {
-  
+    text-align: center;
+    color: #1f2021;
+}
+
+.pricing .container .plans .plan {
+    background-color: #fcfcfc;
+    margin-bottom: 70px;
+}
+
+.pricing .container .plans .head {
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-top: var(--main-color) solid 2px;
+    border-bottom: var(--main-color) solid 2px;
+}
+
+.pricing .container .plans .head h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.pricing .container .plans .head span {
+    font-size: 59px;
+    font-weight: 600;
+    position: relative;
+}
+
+.pricing .container .plans .head span::before {
+    content: "$";
+    position: relative;
+    font-size: 20px;
+    font-weight: normal;
+    top: -40px;
+    margin-right: 10px;
+}
+
+.pricing .container .plans .head span::after {
+    content: "/Mo";
+    position: relative;
+    font-size: 20px;
+    left: 10px;
+}
+
+.pricing .container .plans ul li {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.pricing .container .plans ul li::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 130px;
+    height: 2px;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.pricing .container .plans ul li:last-of-type::after {
+    width: 0;
+}
+
+.pricing .container .plans .foot {
+    border-top: var(--main-color) solid 2px;
+    padding: 40px 0;
+}
+
+.pricing .container .plans .foot a {
+    text-decoration: none;
+    color: #1f2021;
+    text-transform: capitalize;
+    border: var(--main-color) 2px solid;
+    padding: 13px 35px;
 }
 /*End Pricing*/
