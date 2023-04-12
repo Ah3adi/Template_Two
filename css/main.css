@@ -85,6 +85,10 @@ ul {
     margin: 0 auto;
 }
 
+::placeholder {
+    opacity: 0.5;
+}
+
 /* Small */
 @media (min-width: 768px) {
     .container {
@@ -592,6 +596,7 @@ header .container nav .toggle-menu {
     color: white;
     background-color: var(--main-color);
     text-transform: uppercase;
+    border-radius: 4px;
 }
 /* End Portfolio */
 
@@ -649,6 +654,7 @@ header .container nav .toggle-menu {
     padding: 10px 50px;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .video .vd1 {
@@ -910,6 +916,7 @@ header .container nav .toggle-menu {
     background-color: #dedadc;
     height: 25px;
     margin-top: 10px;
+    border-radius: 4px;
 }
 
 .skills .our-skills .holder .prog span {
@@ -917,6 +924,7 @@ header .container nav .toggle-menu {
     height: 100%;
     background-color: var(--main-color);
     position: relative;
+    border-radius: 4px;
 }
 
 .skills .our-skills .holder .prog span::before {
@@ -1087,6 +1095,7 @@ header .container nav .toggle-menu {
     text-transform: capitalize;
     border: var(--main-color) 1px solid;
     padding: 13px 35px;
+    border-radius: 4px;
 }
 
 .pricing .container .contact-p {
@@ -1101,10 +1110,11 @@ header .container nav .toggle-menu {
     color: white;
     display: block;
     width: fit-content;
-    margin: 30px auto;
+    margin: 35px auto;
     text-transform: capitalize;
     background-color: var(--main-color);
     padding: 15px 35px;
+    border-radius: 4px;
 }
 /* End Pricing */
 
@@ -1169,6 +1179,7 @@ header .container nav .toggle-menu {
     padding: 0 60px;
     caret-color: var(--main-color);
     outline: none;
+    border-radius: 4px;
 }
 
 .subscribe .container form input[type="submit"] {
@@ -1180,6 +1191,7 @@ header .container nav .toggle-menu {
     position: absolute;
     right: 1px;
     top: 1px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -1231,6 +1243,7 @@ header .container nav .toggle-menu {
     margin-bottom: 30px;
     padding: 15px;
     width: 100%;
+    border-radius: 4px;
 }
 
 .contact form textarea {
@@ -1254,6 +1267,7 @@ header .container nav .toggle-menu {
     display: flex;
     margin: 0 auto;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 @media (min-width: 768px) {
@@ -1383,3 +1397,4 @@ header .container nav .toggle-menu {
     color: var(--main-color);
 }
 /* End Footer */
+
