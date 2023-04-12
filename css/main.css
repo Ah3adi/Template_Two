@@ -512,7 +512,7 @@ header .container nav .toggle-menu {
 .portfolio .container .shuffle li.tr:hover {
     background-color: var(--main-color);
     color: white;
-    cursor: default;
+    cursor: pointer;
 }
 
 /* ---------------------------------------------- */
@@ -1111,3 +1111,211 @@ header .container nav .toggle-menu {
     padding: 15px 35px;
 }
 /* End Pricing */
+
+/* Start Subscribe */
+.subscribe {
+    background-image: url(../images/neon.jpg);
+    background-size: cover;
+    height: 270px;
+    position: relative;
+    color: white;
+    display: flex;
+}
+
+.subscribe::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 50%);
+}
+
+.subscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+.subscribe .container form {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+}
+
+.subscribe .container form i {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.subscribe .container form input[type="email"] {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
+    width: 670px;
+    height: 60px;
+    position: relative;
+    padding: 0 60px;
+    caret-color: var(--main-color);
+    outline: none;
+}
+
+.subscribe .container form input[type="submit"] {
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .subscribe .container form input[type="email"] {
+        width: 330px;
+    }
+}
+
+.subscribe .container p {
+    line-height: 2;
+    margin-left: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .subscribe .container p {
+        margin: 5px 0 0;
+    }
+}
+
+.fo::placeholder {
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* End Subscribe */
+
+/* Start Contact */
+.contact {
+    padding: var(--section-pad);
+}
+
+.contact .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact form {
+    flex-basis: 100%;
+}
+
+.contact form .main-input {
+    outline: none;
+    text-transform: uppercase;
+    border: #dedadc solid 1px;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 100%;
+}
+
+.contact form textarea {
+    resize: vertical;
+    min-height: 200px;
+    max-height: 500px;
+}
+.contact form .main-input::placeholder {
+    font-size: 13px;
+    color: #1f2021;
+}
+
+.contact form input[type="submit"] {
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 20px 45px;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .contact .content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .contact .content form {
+        flex-basis: 70%;
+    }
+
+    .contact form input:last-of-type {
+        margin: 0 0 0 auto;
+    }
+}
+
+.contact .info {
+    text-align: center;
+
+}
+
+.contact .info h4 {
+    text-transform: uppercase;
+    margin: 30px 0 15px;
+    font-weight: normal;
+    color: #1f2021;
+    font-size: 18px;
+}
+
+.contact .info span {
+    color: var(--par-color);
+    font-size: 15px;
+    line-height: 2;
+}
+
+.contact .info h4:last-of-type {
+    margin-top: 20px;
+}
+
+.contact .content address {
+    line-height: 2;
+    color: var(--par-color);
+}
+
+@media (min-width: 768px) {
+    .contact .info {
+        text-align: start;
+        flex-basis: 25%;
+    }
+
+    .contact .info h4 {
+        margin: 0 0 40px;
+    }
+
+    .contact .info h4:last-of-type {
+        margin-top: 65px;
+    }
+}
+/* End Contact */
